@@ -42,8 +42,8 @@ body {
 	margin: 20px 0;
 	display: grid;
 	input {
-		padding: 10px 5px;
+		padding: 10px 20px;
 		border-radius: 5px;
-		border-color: lightgray;
+		border: 1px solid lightgray;
 	}
 }
