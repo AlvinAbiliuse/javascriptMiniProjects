@@ -22,7 +22,7 @@ body {
 	max-width: 600px;
 	margin: 50px auto;
 	gap: 0;
-	animation: 2s movein ease;
+	animation: 1.5s movein ease;
 }
 
 .card {
@@ -35,7 +35,7 @@ body {
 
 @keyframes movein {
 	0% {
-		transform: translateX(100%);
+		transform: translateX(50%);
 	}
 	100% {
 		transform: translateX(0%);
