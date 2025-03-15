@@ -5,19 +5,33 @@
 	box-sizing: border-box;
 }
 
+html {
+	font-family: sans-serif;
+}
+
 body {
 	height: 100%;
 }
 
 #slider {
+	display: grid;
 	height: 400px;
 	width: 600px;
-	margin: 150px auto;
+	margin: 50px auto;
+	gap: 0;
 }
 
 .card {
-	display: grid;
-	background: red;
+	padding: 50px;
+	padding-top: 100px;
+	background: #784be9;
+	color: white;
+	border-radius: 15px;
+}
+
+.name {
+	margin-top: 20px;
+	font-size: 12px;
 }
 
 img {
@@ -26,4 +40,5 @@ img {
 	object-fit: cover;
 	border-radius: 100%;
 	margin: 0 auto;
+	transform: translateY(80px);
 }
