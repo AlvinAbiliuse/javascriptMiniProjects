@@ -39,4 +39,4 @@ updateState();
 setInterval(() => {
 	updateDom();
 	updateState();
-}, 5000);
+}, 10000);
