@@ -22,6 +22,7 @@ function updateDom() {
 	card.className = "card";
 	name.className = "name";
 
+	image.src = data[Object.keys(data)[currentState]]["image"];
 	testimonial.textContent =
 		data[Object.keys(data)[currentState]]["testimonial"];
 	name.textContent = data[Object.keys(data)[currentState]]["name"];
