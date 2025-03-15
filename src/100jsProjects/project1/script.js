@@ -12,13 +12,16 @@ function updateState() {
 
 function updateDom() {
 	console.log(data[Object.keys(data)[currentState]]);
-	let slider = document.querySelector("#slider");
-	slider.innerHTML = "";
+	let body = document.querySelector("body");
+	let currentSlider = document.querySelector("#slider");
+	currentSlider.remove();
+	let slider = document.createElement("div");
 	let card = document.createElement("div");
 	let image = document.createElement("img");
 	let testimonial = document.createElement("p");
 	let name = document.createElement("p");
 
+	slider.id = "slider";
 	card.className = "card";
 	name.className = "name";
 
@@ -31,6 +34,7 @@ function updateDom() {
 	card.appendChild(testimonial);
 	card.appendChild(name);
 	slider.appendChild(card);
+	body.appendChild(slider);
 }
 
 updateDom();
