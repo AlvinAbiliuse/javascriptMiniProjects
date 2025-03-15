@@ -10,6 +10,7 @@ html {
 	height: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+	background-color: #f5f5f5;
 }
 
 body {
@@ -18,8 +19,12 @@ body {
 }
 
 .content {
-	max-width: 500px;
-	margin: 100px auto;
+	background-color: white;
+	max-width: 600px;
+	margin: 80px auto;
+	padding: 20px;
+	box-shadow: 0 0 20px lightgray;
+	border-radius: 20px;
 	* {
 		margin: 5px 0;
 	}
@@ -32,14 +37,14 @@ body {
 		padding: 10px;
 		font-size: 18px;
 		color: white;
-		background-color: green;
+		background-color: #52aa3e;
 		border: none;
 		border-radius: 5px;
 	}
 }
 
 .boxes {
-	margin: 20px 0;
+	margin: 10px 0;
 	display: grid;
 	input {
 		padding: 10px 20px;
