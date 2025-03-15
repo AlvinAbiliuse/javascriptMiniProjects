@@ -5,7 +5,7 @@ function getTotal(e) {
 	let tip = Number(e.querySelector("#tip").value);
 	let toChange = e.querySelector(".totalAmount");
 
-	toChange.textContent = bill + (tip * bill) / 100;
+	toChange.textContent = "$" + (bill + (tip * bill) / 100);
 }
 
 form.addEventListener("submit", (e) => {
