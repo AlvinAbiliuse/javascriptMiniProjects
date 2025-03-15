@@ -1,0 +1,49 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	height: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+body {
+	max-width: 100%;
+	height: 100%;
+}
+
+.content {
+	max-width: 500px;
+	margin: 100px auto;
+	* {
+		margin: 5px 0;
+	}
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	button {
+		width: 100%;
+		padding: 10px;
+		font-size: 18px;
+		color: white;
+		background-color: green;
+		border: none;
+		border-radius: 5px;
+	}
+}
+
+.boxes {
+	margin: 20px 0;
+	display: grid;
+	input {
+		padding: 10px 5px;
+		border-radius: 5px;
+		border-color: lightgray;
+	}
+}
