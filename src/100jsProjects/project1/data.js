@@ -18,3 +18,5 @@ let data = {
 		name: "Constantine V",
 	},
 };
+
+export { data };
