@@ -1,6 +1,29 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+}
+
+#slider {
+	height: 400px;
+	width: 600px;
+	margin: 150px auto;
+}
+
+.card {
+	display: grid;
+	background: red;
+}
+
 img {
 	height: 150px;
 	width: 150px;
 	object-fit: cover;
 	border-radius: 100%;
+	margin: 0 auto;
 }

@@ -27,7 +27,7 @@ function updateDom() {
 		data[Object.keys(data)[currentState]]["testimonial"];
 	name.textContent = data[Object.keys(data)[currentState]]["name"];
 
-	card.appendChild(image);
+	slider.appendChild(image);
 	card.appendChild(testimonial);
 	card.appendChild(name);
 	slider.appendChild(card);
