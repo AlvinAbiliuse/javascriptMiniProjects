@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+form {
+	display: grid;
+	justify-content: center;
+	gap: 20px;
+	max-width: 600px;
+	margin: 100px auto;
+	border: 1px solid gray;
+	padding: 10px;
+}
+
+button {
+	width: 100px;
+}
