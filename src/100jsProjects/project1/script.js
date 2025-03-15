@@ -3,7 +3,7 @@ import { data } from "./data.js";
 let currentState = 0;
 
 function updateState() {
-	if (currentState === Object.keys(data).length) {
+	if (currentState === Object.keys(data).length - 1) {
 		currentState = 0;
 	} else {
 		currentState++;
