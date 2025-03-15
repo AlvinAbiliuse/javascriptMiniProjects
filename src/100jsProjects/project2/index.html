@@ -4,12 +4,22 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width initial-scale=1" />
 		<title>Tip Calculator Project</title>
-		<link rel="stylesheet" href="./styles.css">
+		<link rel="stylesheet" href="./styles.css" />
 	</head>
 	<body>
 		<a href="../../../index.html">go back</a>
-		<h2>Tip Calculator Project</h2>
-		<div class="content"></div>
+		<div class="content">
+			<form>
+				<h2>Tip Calculator</h2>
+				<p>Enter the bill amount and tip percentage to calculate the total</p>
+				<label for="total">Bill Amount: </label>
+				<input id="total" />
+				<label for="tip">Tip percentage:</label>
+				<input id="tip" />
+				<button type="submit">CALCULATE</button>
+				<p>Total: <span class="totalAmount"></span></p>
+			</form>
+		</div>
 		<script src="./script.js"></script>
 	</body>
 </html>
