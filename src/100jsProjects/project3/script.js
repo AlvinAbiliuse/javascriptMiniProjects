@@ -1,13 +1,12 @@
 function toChange(e) {
 	let date = e.querySelector("input").value;
-	let change = e.querySelector("span");
-
 	let tt = date.split("-");
 
-	let oldYear = tt[0];
-	let oldMonth = tt[1];
-	let oldDate = tt[2];
+	let oldYear = Number(tt[0]);
+	let oldMonth = Number(tt[1]);
+	let oldDate = Number(tt[2]);
 
+	let change = e.querySelector("span");
 	change.textContent = 21;
 
 	let currDate = new Date();
@@ -20,7 +19,19 @@ function toChange(e) {
 	console.log(oldMonth, month);
 	console.log(oldDate, today);
 
-	console.log(year, month, day);
+	console.log(year, month, today);
+
+	let currAge = 0;
+	if (year - oldYear <= 0) {
+		currAge = currAge + (year - oldYear - 1);
+	}
+	if (oldMonth < month) {
+		currAge++;
+	} else if (oldMonth === month && oldDate < today) {
+		currAge++;
+	}
+
+	change.textContent = currAge;
 }
 
 let form = document.querySelector("form");
