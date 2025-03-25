@@ -9,6 +9,7 @@ function rollDice() {
 	let rollNum = document.createElement("p");
 	let diceEvent = document.createElement("p");
 	card.className = "card";
+	diceEvent.className = "diceEvent";
 	rollNum.textContent = `Roll ${n++}:`;
 
 	random = dice[Math.floor(Math.random() * dice.length)];
