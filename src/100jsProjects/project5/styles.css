@@ -58,16 +58,14 @@ button:hover {
 }
 
 .wobble {
-	animation: anim 0.3s infinite linear;
+	animation: anim 0.25s infinite linear;
 }
 
 @keyframes anim {
 	0% {
 		transform: rotate(0);
-		color: #58007e;
 	}
 	100% {
 		transform: rotate(180deg);
-		color: #002c7e;
 	}
 }
