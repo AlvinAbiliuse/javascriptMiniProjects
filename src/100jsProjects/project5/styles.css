@@ -28,3 +28,19 @@ body {
 		font-size: 5em;
 	}
 }
+
+button {
+	font-size: 1em;
+	max-width: 200px;
+	padding: 15px 30px;
+	margin: 0 auto;
+	background-color: #5ca3e6;
+	color: white;
+	border: none;
+	border-radius: 15px;
+}
+
+button:hover {
+	background-color: #4c7dd8;
+	cursor: pointer;
+}
