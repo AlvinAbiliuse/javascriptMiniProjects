@@ -28,6 +28,9 @@ body {
 		font-size: 150px;
 	}
 }
+.diceEvent {
+	font-size: 40px;
+}
 
 button {
 	font-size: 1em;
