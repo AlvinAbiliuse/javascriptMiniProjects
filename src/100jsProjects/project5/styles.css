@@ -38,9 +38,21 @@ button {
 	color: white;
 	border: none;
 	border-radius: 15px;
+	transition: background-color 0.3s ease;
 }
 
 button:hover {
 	background-color: #4c7dd8;
 	cursor: pointer;
+}
+
+.card {
+	display: flex;
+	font-size: 1.2em;
+	justify-content: space-between;
+	margin: 10px 0;
+	padding: 25px;
+	box-shadow: 2px 2px 2px lightgray;
+	background-color: #f1f1f1;
+	border-radius: 5px;
 }
