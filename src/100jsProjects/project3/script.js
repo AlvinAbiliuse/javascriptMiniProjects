@@ -22,12 +22,14 @@ function toChange(e) {
 	console.log(year, month, today);
 
 	let currAge = 0;
-	if (year - oldYear <= 0) {
-		currAge = currAge + (year - oldYear - 1);
+	if (year - oldYear > 0) {
+		currAge = currAge + (year - oldYear);
 	}
 	if (oldMonth < month) {
 		currAge++;
-	} else if (oldMonth === month && oldDate < today) {
+	}
+	if (oldMonth === month && oldDate <= today) {
+		console.log("old");
 		currAge++;
 	}
 
