@@ -1,6 +1,3 @@
-
-
 let tt = fetch("https://www.themealdb.com/api/json/v1/1/random.php");
 
-
-console.log(tt);
+tt.then((e) => console.log(e.json()));
