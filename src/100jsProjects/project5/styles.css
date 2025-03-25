@@ -1,0 +1,30 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	max-width: 1440px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.content {
+	margin-top: 20px;
+	font-size: 24px;
+	display: grid;
+	justify-content: center;
+	gap: 10px;
+	> * {
+		text-align: center;
+	}
+	.roll {
+		font-size: 5em;
+	}
+}
