@@ -41,4 +41,16 @@ export default function updateDom(data) {
 	mainCard.appendChild(card);
 	mainCard.appendChild(dropdownContainer);
 	container.appendChild(mainCard);
+	/*
+	let dropdownBtnSelector = document.querySelector(".dropdownBtn");
+
+	dropdownBtnSelector.addEventListener("click", () => {
+		let tt = dropdownBtnSelector.parentNode.querySelector(".dropdown");
+		if (tt.classList[tt.classList.length - 1] == "hidden") {
+			tt.className = "dropdown";
+		} else {
+			tt.className = "dropdown hidden";
+		}
+	});
+	*/
 }
