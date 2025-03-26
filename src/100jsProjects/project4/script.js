@@ -9,9 +9,9 @@ function setIngredients(data) {
 	let n = 2;
 	let instruction = data["strIngredient1"];
 	while (data["strIngredient" + n] != "") {
-		instruction = instruction + "," + data[`strIngredient${n++}`];
+		instruction = instruction + ", " + data[`strIngredient${n++}`];
 	}
-	console.log(instruction);
+	return instruction;
 }
 function updateDom(data) {
 	console.log(data);
