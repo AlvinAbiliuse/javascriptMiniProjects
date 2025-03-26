@@ -4,6 +4,7 @@ export default function updateDom(data) {
 	console.log(data);
 	let container = document.querySelector(".cardContainer");
 
+	let mainCard = document.createElement("div");
 	let card = document.createElement("div");
 	let image = document.createElement("img");
 	let name = document.createElement("h2");
@@ -23,6 +24,7 @@ export default function updateDom(data) {
 	recipe.textContent = "Recipe Source";
 	yt.href = data.strYoutube;
 	recipe.href = data.strSource;
+	instructions.textContent = data.strInstructions;
 
 	card.appendChild(image);
 	card.appendChild(name);
@@ -31,5 +33,11 @@ export default function updateDom(data) {
 	linkContainer.appendChild(recipe);
 	card.appendChild(linkContainer);
 
-	container.appendChild(card);
+	dropdownContainer.appendChild(dropdownBtn);
+	dropdownContainer.appendChild(instructions);
+	console.log(instructions);
+
+	mainCard.appendChild(card);
+	mainCard.appendChild(dropdownContainer);
+	container.appendChild(mainCard);
 }
