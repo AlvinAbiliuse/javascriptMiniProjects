@@ -2,7 +2,7 @@ async function hello(fet, js) {
 	let req = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
 	let json = await req.json();
 
-	console.log(json.meals[0]);
+	updateDom(json.meals[0]);
 }
 
 function updateDom(data) {
@@ -10,5 +10,5 @@ function updateDom(data) {
 }
 
 for (let i = 0; i < 10; i++) {
-	updateDom(hello());
+	hello();
 }
