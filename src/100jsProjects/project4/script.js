@@ -1,3 +1,5 @@
+import setIngredients from "./setIngredients.js";
+
 async function hello(fet, js) {
 	let req = await fetch("https://www.themealdb.com/api/json/v1/1/random.php");
 	let json = await req.json();
@@ -5,14 +7,6 @@ async function hello(fet, js) {
 	updateDom(json.meals[0]);
 }
 
-function setIngredients(data) {
-	let n = 2;
-	let instruction = data["strIngredient1"];
-	while (data["strIngredient" + n] != "") {
-		instruction = instruction + ", " + data[`strIngredient${n++}`];
-	}
-	return instruction;
-}
 function updateDom(data) {
 	console.log(data);
 	let image = document.createElement("img");
