@@ -11,10 +11,3 @@ for (let i = 0; i < 10; i++) {
 	hello();
 }
 
-/*
-let dropdownBtn = document.querySelector(".dropdownBtn");
-
-dropdownBtn.addEventListener("click", () => {
-	console.log(dropdownBtn.parentNode);
-});
-*/
