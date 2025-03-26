@@ -24,6 +24,9 @@ export default function updateDom(data) {
 	recipe.textContent = "Recipe Source";
 	yt.href = data.strYoutube;
 	recipe.href = data.strSource;
+	dropdownBtn.className = "dropdownBtn fullBtn";
+	dropdownBtn.textContent = "View Full Instructions";
+	instructions.className = "dropdown";
 	instructions.textContent = data.strInstructions;
 
 	card.appendChild(image);
