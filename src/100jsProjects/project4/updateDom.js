@@ -2,6 +2,9 @@ import setIngredients from "./setIngredients.js";
 
 export default function updateDom(data) {
 	console.log(data);
+	let container = document.querySelector(".cardContainer");
+
+	let card = document.createElement("div");
 	let image = document.createElement("img");
 	let name = document.createElement("h2");
 	let ingredients = document.createElement("p");
@@ -12,7 +15,14 @@ export default function updateDom(data) {
 	let dropdownBtn = document.createElement("button");
 	let instructions = document.createElement("p");
 
+	card.className = "card";
 	image.src = data.strMealThumb;
 	name.textContent = data.strMeal;
 	ingredients.textContent = setIngredients(data);
+
+	card.appendChild(image);
+	card.appendChild(name);
+	card.appendChild(ingredients);
+
+	container.appendChild(card);
 }
