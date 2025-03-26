@@ -1,7 +1,6 @@
 import setIngredients from "./setIngredients.js";
 
 export default function updateDom(data) {
-	console.log(data);
 	let container = document.querySelector(".cardContainer");
 
 	let mainCard = document.createElement("div");
@@ -38,7 +37,6 @@ export default function updateDom(data) {
 
 	dropdownContainer.appendChild(dropdownBtn);
 	dropdownContainer.appendChild(instructions);
-	console.log(instructions);
 
 	mainCard.appendChild(card);
 	mainCard.appendChild(dropdownContainer);
