@@ -1,5 +1,4 @@
 import updateDom from "./updateDom.js";
-import dropdown from "./dropdown.js";
 
 async function hello(fet, js) {
 	for (let i = 0; i < 10; i++) {
@@ -10,4 +9,4 @@ async function hello(fet, js) {
 	}
 }
 
-hello().then(() => dropdown());
+hello();
