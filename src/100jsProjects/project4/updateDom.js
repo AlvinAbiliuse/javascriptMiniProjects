@@ -25,7 +25,7 @@ export default function updateDom(data) {
 	recipe.href = data.strSource;
 	dropdownBtn.className = "dropdownBtn fullBtn";
 	dropdownBtn.textContent = "View Full Instructions";
-	instructions.className = "dropdown";
+	instructions.className = "dropdown hidden";
 	instructions.textContent = data.strInstructions;
 
 	card.appendChild(image);
