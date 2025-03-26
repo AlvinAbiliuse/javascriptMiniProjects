@@ -6,10 +6,8 @@ async function hello(fet, js) {
 	let json = await req.json();
 
 	updateDom(json.meals[0]);
-
-	dropdown();
 }
 
 for (let i = 0; i < 10; i++) {
-	hello();
+	hello().then(() => dropdown());
 }

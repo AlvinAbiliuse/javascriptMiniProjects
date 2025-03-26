@@ -1,8 +1,7 @@
-
-
 export default function dropdown() {
 	let dropper = document.querySelector(".dropdownBtn");
 
-	dropper.addEventListener("click", (e) => console.log(e));
+	dropper.addEventListener("click", (e) => {
+		console.log(e.target.parentNode);
+	});
 }
-
