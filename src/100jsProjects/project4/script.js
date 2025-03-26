@@ -10,7 +10,3 @@ async function hello(fet, js) {
 for (let i = 0; i < 10; i++) {
 	hello();
 }
-
-let dropdown = document.querySelector(".dropdownBtn");
-
-dropdown.addEventListener("click", (e) => console.log(e));
