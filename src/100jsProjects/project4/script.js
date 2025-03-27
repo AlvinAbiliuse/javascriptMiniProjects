@@ -9,7 +9,6 @@ fetch("https://dummyjson.com/recipes?limit=10")
 	})
 	.then(() => {
 		let tt = document.querySelectorAll(".dropdownBtn");
-		console.log(tt);
 		for (let i = 0; i < tt.length; i++) {
 			tt[i].addEventListener("click", (e) => {
 				let path = e.target.parentNode.querySelector(".dropdown");
