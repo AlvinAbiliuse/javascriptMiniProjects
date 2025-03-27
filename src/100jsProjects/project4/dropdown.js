@@ -4,6 +4,6 @@ export default function dropdown() {
 	dropper.addEventListener("click", (e) => {
 		let temp = e.target.parentNode.querySelector(".dropdown");
 		temp.classList.toggle("hidden");
-		console.log("hidden" in temp);
+		console.log("hidden" in t);
 	});
 }
