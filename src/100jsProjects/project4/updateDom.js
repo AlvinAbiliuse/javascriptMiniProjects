@@ -1,4 +1,3 @@
-import setIngredients from "./setIngredients.js";
 import dropdown from "./dropdown.js";
 
 export default function updateDom(data, n) {
@@ -15,8 +14,8 @@ export default function updateDom(data, n) {
 	let instructions = document.createElement("p");
 
 	card.className = "card";
-	image.src = data.strMealThumb;
-	name.textContent = data.strMeal;
+	image.src = data.image;
+	name.textContent = data.name;
 	ingredients.textContent = "Ingredients: " + data.ingredients.join();
 	dropdownBtn.className = "dropdownBtn fullBtn";
 	dropdownBtn.textContent = "View Full Instructions";
@@ -26,8 +25,6 @@ export default function updateDom(data, n) {
 	card.appendChild(image);
 	card.appendChild(name);
 	card.appendChild(ingredients);
-	linkContainer.appendChild(yt);
-	linkContainer.appendChild(recipe);
 	card.appendChild(linkContainer);
 
 	dropdownContainer.appendChild(dropdownBtn);
