@@ -1,5 +1,3 @@
-import dropdown from "./dropdown.js";
-
 export default function updateDom(data, n) {
 	let container = document.querySelector(".cardContainer");
 
@@ -33,6 +31,4 @@ export default function updateDom(data, n) {
 	mainCard.appendChild(card);
 	mainCard.appendChild(dropdownContainer);
 	container.appendChild(mainCard);
-
-	dropdown();
 }
