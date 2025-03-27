@@ -10,8 +10,6 @@ export default function updateDom(data, n) {
 	let name = document.createElement("h2");
 	let ingredients = document.createElement("p");
 	let linkContainer = document.createElement("div");
-	let yt = document.createElement("a");
-	let recipe = document.createElement("a");
 	let dropdownContainer = document.createElement("div");
 	let dropdownBtn = document.createElement("button");
 	let instructions = document.createElement("p");
@@ -19,15 +17,11 @@ export default function updateDom(data, n) {
 	card.className = "card";
 	image.src = data.strMealThumb;
 	name.textContent = data.strMeal;
-	ingredients.textContent = "Ingredients: " + setIngredients(data);
-	yt.textContent = "Youtube";
-	recipe.textContent = "Recipe Source";
-	yt.href = data.strYoutube;
-	recipe.href = data.strSource;
+	ingredients.textContent = "Ingredients: " + data.ingredients.join();
 	dropdownBtn.className = "dropdownBtn fullBtn";
 	dropdownBtn.textContent = "View Full Instructions";
 	instructions.className = "dropdown hidden";
-	instructions.textContent = data.strInstructions;
+	instructions.textContent = data.instructions.join("\n");
 
 	card.appendChild(image);
 	card.appendChild(name);
