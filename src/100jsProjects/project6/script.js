@@ -9,11 +9,13 @@ function updateDom() {
 	let time = timer / 60000;
 	let minute = time.toString().split(".")[0];
 	try {
-		console.log(time.toString().split(".")[1] * 60);
+		console.log((time.toString().split(".")[1] * 60).toString().split(""));
 		console.log(time);
 	} catch {}
-	let seconds = time.toString().split(".")[1]
-		? time.toString().split(".")[1] * 60
+	let splitSec = time.toString().split(".")[1];
+	let seconds = splitSec
+		? (splitSec * 60).toString().split("")[0] +
+			(splitSec * 60).toString().split("")[1]
 		: "00";
 	timeDisplay.textContent = minute + ":" + seconds;
 }
