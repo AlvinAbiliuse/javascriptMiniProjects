@@ -48,6 +48,17 @@ h1 {
 	left: 20px;
 }
 
+.dropdownBtn {
+	width: 100%;
+	padding: 10px;
+	margin: 20px 0;
+	font-size: 1.4em;
+}
+
+.dropdownBtn:hover {
+	cursor: pointer;
+}
+
 .hidden {
 	display: none;
 }
