@@ -12,11 +12,10 @@ function updateDom() {
 		console.log((time.toString().split(".")[1] * 60).toString().split(""));
 		console.log(time);
 	} catch {}
-	let splitSec = time.toString().split(".")[1];
-	let seconds = splitSec
-		? (splitSec * 60).toString().split("")[0] +
-			(splitSec * 60).toString().split("")[1]
-		: "00";
+	let splitSec = time.toString().split(".")[1]
+		? (time.toString().split(".")[1] * 60).toString().split("")
+		: ["0", "0"];
+	let seconds = splitSec[0] + splitSec[1];
 	timeDisplay.textContent = minute + ":" + seconds;
 }
 
