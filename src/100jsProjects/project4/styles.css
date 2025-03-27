@@ -7,6 +7,7 @@
 
 html {
 	font-family: sans-serif;
+	font-size: 1.2em;
 }
 
 body {
@@ -41,6 +42,10 @@ h1 {
 	color: white;
 }
 
+p {
+	font-size: 1.2em;
+}
+
 .float {
 	color: white;
 	position: absolute;
@@ -50,13 +55,24 @@ h1 {
 
 .dropdownBtn {
 	width: 100%;
-	padding: 10px;
-	margin: 20px 0;
+	padding: 20px;
+	margin-top: 20px;
 	font-size: 1.4em;
+	border: none;
+	background-color: #efefef;
+	border-radius: 5px;
 }
 
 .dropdownBtn:hover {
 	cursor: pointer;
+	background-color: #e7e7e7;
+}
+
+.dropdown {
+	margin-top: 20px;
+	padding: 20px;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 .hidden {
