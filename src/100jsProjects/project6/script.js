@@ -3,24 +3,32 @@ let timeDisplay = document.querySelector(".time");
 
 timeDisplay.textContent = timer;
 
-function interval() {}
+let countdown;
 
 function updateDom() {
-	let countdown = setInterval(() => {
+	timeDisplay.textContent = timer;
+}
+
+function interval() {
+	countdown = setInterval(() => {
 		console.log(timer);
-		timeDisplay.textContent = timer;
+		updateDom();
 		timer = timer - 100;
 	}, 100);
-	let pause = document.querySelector("#pause");
-	pause.addEventListener("click", () => {
-		clearInterval(countdown);
-	});
 }
 
 updateDom();
 
 let start = document.querySelector("#start");
+let pause = document.querySelector("#pause");
+let reset = document.querySelector("#reset");
 
-start.addEventListener("click", () => {
-	updateDom("start");
+start.addEventListener("click", () => interval());
+
+pause.addEventListener("click", () => clearInterval(countdown));
+
+reset.addEventListener("click", () => {
+	clearInterval(countdown);
+	timer = 25 * 60000;
+	updateDom();
 });
