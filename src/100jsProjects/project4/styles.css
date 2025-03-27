@@ -28,7 +28,7 @@ body {
 	align-items: center;
 	gap: 20px;
 	img {
-		width: 200px;
+		width: 250px;
 		object-fit: contain;
 	}
 }
@@ -38,7 +38,7 @@ h1 {
 	width: 100%;
 	text-align: center;
 	padding: 50px;
-	background-color: blue;
+	background-color: #0031bd;
 	color: white;
 }
 

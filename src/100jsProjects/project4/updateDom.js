@@ -14,7 +14,7 @@ export default function updateDom(data, n) {
 	card.className = "card";
 	image.src = data.image;
 	name.textContent = data.name;
-	ingredients.textContent = "Ingredients: " + data.ingredients.join();
+	ingredients.textContent = "Ingredients: " + data.ingredients.join(", ");
 	dropdownBtn.className = "dropdownBtn fullBtn";
 	dropdownBtn.textContent = "View Full Instructions";
 	instructions.className = "dropdown hidden";
