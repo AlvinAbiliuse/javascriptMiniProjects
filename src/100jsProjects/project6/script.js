@@ -6,12 +6,20 @@ timeDisplay.textContent = timer;
 let countdown;
 
 function updateDom() {
-	timeDisplay.textContent = timer;
+	let time = timer / 60000;
+	let minute = time.toString().split(".")[0];
+	try {
+		console.log(time.toString().split(".")[1] * 60);
+		console.log(time);
+	} catch {}
+	let seconds = time.toString().split(".")[1]
+		? time.toString().split(".")[1] * 60
+		: "00";
+	timeDisplay.textContent = minute + ":" + seconds;
 }
 
 function interval() {
 	countdown = setInterval(() => {
-		console.log(timer);
 		updateDom();
 		timer = timer - 100;
 	}, 100);
@@ -23,7 +31,10 @@ let start = document.querySelector("#start");
 let pause = document.querySelector("#pause");
 let reset = document.querySelector("#reset");
 
-start.addEventListener("click", () => interval());
+start.addEventListener("click", () => {
+	clearInterval(countdown);
+	interval();
+});
 
 pause.addEventListener("click", () => clearInterval(countdown));
 
