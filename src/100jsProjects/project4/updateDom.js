@@ -1,3 +1,5 @@
+import dropdown from "./dropdown.js";
+
 export default function updateDom(data, n) {
 	let container = document.querySelector(".cardContainer");
 
