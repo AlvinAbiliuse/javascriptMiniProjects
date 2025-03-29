@@ -6,6 +6,8 @@
 }
 
 html {
+	font-size: 1.2em;
+	font-family: sans-serif;
 	height: 100%;
 }
 
@@ -19,8 +21,23 @@ body {
 	> div {
 		padding: 20px;
 		max-width: 600px;
-		margin: 0 auto;
+		margin: 50px auto;
 		border: 1px solid black;
 		text-align: center;
+	}
+	p {
+		font-size: 4em;
+		margin: 45px auto;
+	}
+	button {
+		font-size: 1em;
+		margin: 7px;
+		padding: 10px 20px;
+		border: none;
+		border-radius: 5px;
+		color: white;
+	}
+	#start {
+		background-color: #37b046;
 	}
 }
