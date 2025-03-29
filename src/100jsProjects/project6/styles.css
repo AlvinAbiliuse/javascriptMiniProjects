@@ -22,34 +22,34 @@ body {
 		padding: 20px;
 		max-width: 600px;
 		margin: 50px auto;
-		border: 1px solid black;
 		text-align: center;
 	}
 	h1,
 	p {
-		color: #2c2c2c;
+		color: #4f4f4f;
 	}
 	p {
 		font-size: 4em;
 		margin: 45px auto;
 	}
 	button {
-		font-size: 1em;
+		font-size: 0.8em;
 		margin: 7px;
-		padding: 10px 20px;
+		padding: 8px 15px;
 		border: none;
 		border-radius: 5px;
 		color: white;
+		transition: opacity 0.2s ease;
 	}
 	button:hover {
 		cursor: pointer;
-		opacity: 0.8;
+		opacity: 0.75;
 	}
 	#start {
 		background-color: #37b046;
 	}
 	#pause {
-		background-color: #b03737;
+		background-color: #ca2e2e;
 	}
 	#reset {
 		background-color: #9b9b9b;
