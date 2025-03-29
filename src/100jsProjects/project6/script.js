@@ -4,6 +4,8 @@ let secondDisplay = document.querySelector(".second");
 
 let countdown;
 
+let started = false;
+
 function updateDom() {
 	let time = timer / 60000;
 	let minute = time.toString().split(".")[0];
@@ -30,13 +32,20 @@ let pause = document.querySelector("#pause");
 let reset = document.querySelector("#reset");
 
 start.addEventListener("click", () => {
-	clearInterval(countdown);
-	interval();
+	if (!started) {
+		started = true;
+		clearInterval(countdown);
+		interval();
+	}
 });
 
-pause.addEventListener("click", () => clearInterval(countdown));
+pause.addEventListener("click", () => {
+	started = false;
+	clearInterval(countdown);
+});
 
 reset.addEventListener("click", () => {
+	started = false;
 	clearInterval(countdown);
 	timer = 25 * 60000;
 	updateDom();
