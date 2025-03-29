@@ -2,8 +2,6 @@ let timer = 25 * 60000;
 let minuteDisplay = document.querySelector(".minute");
 let secondDisplay = document.querySelector(".second");
 
-timeDisplay.textContent = timer;
-
 let countdown;
 
 function updateDom() {
@@ -13,7 +11,9 @@ function updateDom() {
 		? (time.toString().split(".")[1] * 60).toString().split("")
 		: ["0", "0"];
 	let seconds = splitSec[0] + splitSec[1];
-	timeDisplay.textContent = minute + ":" + seconds;
+	console.log(minute, seconds);
+	minuteDisplay.textContent = minute;
+	secondDisplay.textContent = seconds;
 }
 
 function interval() {
