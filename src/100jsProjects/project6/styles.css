@@ -25,6 +25,10 @@ body {
 		border: 1px solid black;
 		text-align: center;
 	}
+	h1,
+	p {
+		color: #2c2c2c;
+	}
 	p {
 		font-size: 4em;
 		margin: 45px auto;
@@ -37,7 +41,17 @@ body {
 		border-radius: 5px;
 		color: white;
 	}
+	button:hover {
+		cursor: pointer;
+		opacity: 0.8;
+	}
 	#start {
 		background-color: #37b046;
+	}
+	#pause {
+		background-color: #b03737;
+	}
+	#reset {
+		background-color: #9b9b9b;
 	}
 }
