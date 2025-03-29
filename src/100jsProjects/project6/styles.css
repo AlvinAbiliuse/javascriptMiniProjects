@@ -57,3 +57,9 @@ body {
 		background-color: #9b9b9b;
 	}
 }
+
+@media (max-width: 600px) {
+	#content > div {
+		padding: 10px;
+	}
+}
