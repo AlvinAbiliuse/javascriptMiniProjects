@@ -13,7 +13,6 @@ function updateDom() {
 		? (time.toString().split(".")[1] * 60).toString().split("")
 		: ["0", "0"];
 	let seconds = splitSec[0] + splitSec[1];
-	console.log(minute, seconds);
 	minuteDisplay.textContent = minute;
 	secondDisplay.textContent = seconds;
 }
