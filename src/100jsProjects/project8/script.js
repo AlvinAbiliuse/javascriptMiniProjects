@@ -5,7 +5,7 @@ let minutes = 0;
 let seconds = 0;
 let ms = 0;
 
-let timeDisplay = document.querySelector(".tempDisplay");
+let timeDisplay = document.querySelector(".display");
 
 let interval;
 let started = false;
@@ -14,7 +14,7 @@ function startInterval() {
 	if (started === false) {
 		started = true;
 		interval = setInterval(() => {
-			if (ms != 1000) {
+			if (ms != 900) {
 				ms = ms + 100;
 			} else if (seconds !== 59) {
 				ms = 0;
@@ -48,4 +48,5 @@ reset.addEventListener("click", () => {
 	clearInterval(interval);
 	[hours, minutes, seconds, ms] = [0, 0, 0, 0];
 	started = false;
+	timeDisplay.textContent = "00:00:00";
 });
