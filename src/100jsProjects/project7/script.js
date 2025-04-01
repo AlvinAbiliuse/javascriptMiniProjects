@@ -1,5 +1,6 @@
-function playTurn(e) {
-	console.log(e);
+function playTurn(user) {
+	let comp = ["rock", "paper", "scissors"][Math.random() * 3];
+	console.log(user, comp);
 }
 
 let button = document.querySelectorAll("button");
@@ -17,6 +18,10 @@ for (let i = 0; i < 3; i++) {
 		setTimeout(() => {
 			e.target.querySelector("span").classList.remove("shake");
 		}, 2000);
+	});
+
+	button[i].addEventListener("mouseout", (e) => {
+		e.target.querySelector("span").classList.remove("shake");
 	});
 }
 
