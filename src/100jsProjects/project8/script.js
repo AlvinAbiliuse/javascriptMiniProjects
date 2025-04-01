@@ -8,23 +8,29 @@ let ms = 0;
 let timeDisplay = document.querySelector(".tempDisplay");
 
 let interval;
+let started = false;
 
 function startInterval() {
-	interval = setInterval(() => {
-		if (ms != 1000) {
-			ms++;
-		} else if (seconds !== 60) {
-			ms = 0;
-			second++;
-		} else if (minutes !== 60) {
-			seconds = 0;
-			minute++;
-		} else {
-			minute = 0;
-			hours++;
-		}
-		timeDisplay.textContent = `${hours}:${minutes}:${seconds}`;
-	}, 100);
+	if (started === false) {
+		started = true;
+		interval = setInterval(() => {
+			if (ms != 1000) {
+				ms = ms + 100;
+			} else if (seconds !== 59) {
+				ms = 0;
+				seconds++;
+			} else if (minutes !== 59) {
+				seconds = 0;
+				minutes++;
+			} else {
+				minutes = 0;
+				hours++;
+			}
+
+			console.log(hours, minutes, seconds, ms);
+			timeDisplay.textContent = `${hours < 10 ? "0" + hours : hours}:${minutes < 10 ? "0" + minutes : minutes}:${seconds < 10 ? "0" + seconds : seconds}`;
+		}, 100);
+	}
 }
 
 let start = document.querySelector(".start");
@@ -35,9 +41,11 @@ start.addEventListener("click", startInterval);
 
 stop.addEventListener("click", () => {
 	clearInterval(interval);
+	started = false;
 });
 
 reset.addEventListener("click", () => {
 	clearInterval(interval);
 	[hours, minutes, seconds, ms] = [0, 0, 0, 0];
+	started = false;
 });
