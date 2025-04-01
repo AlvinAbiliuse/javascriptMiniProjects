@@ -1,8 +1,11 @@
+function playTurn(e) {
+	console.log(e);
+}
+
 let button = document.querySelectorAll("button");
 for (let i = 0; i < 3; i++) {
-	console.log(i);
 	button[i].addEventListener("click", (e) => {
-		console.log(
+		playTurn(
 			e.target.className ? e.target.className : e.target.parentNode.className
 		);
 	});
