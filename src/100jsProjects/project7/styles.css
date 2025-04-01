@@ -1,0 +1,33 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+	background-color: #eeeeee;
+}
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#content {
+	width: 600px;
+	margin: 0 auto;
+	> * {
+		text-align: center;
+	}
+}
+
+.btnContainer {
+	display: flex;
+	gap: 20px;
+	> * {
+		text-align: center;
+	}
+}
