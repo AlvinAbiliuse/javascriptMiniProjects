@@ -29,7 +29,7 @@ body {
 
 #content {
 	max-width: 550px;
-	margin: 0 auto;
+	margin: 40px auto;
 	> * {
 		margin-top: 20px;
 	}
@@ -54,6 +54,7 @@ dialog {
 	background-color: inherit;
 	max-width: 800px;
 	margin: 0 auto;
+	padding: 10px;
 }
 
 dialog::backdrop {
@@ -74,4 +75,10 @@ video {
 	font-size: 50px;
 	font-weight: bold;
 	outline: none;
+}
+
+@media (max-width: 550px) {
+	.closeBtn {
+		font-size: 40px;
+	}
 }
