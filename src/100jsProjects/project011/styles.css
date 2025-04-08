@@ -17,7 +17,26 @@ body {
 }
 
 #content {
-	max-width: 600px;
+	color: #27693e;
+	max-width: 450px;
 	margin: 100px auto;
 	padding: 10px;
+	background-color: #d7f5e1;
+	border-radius: 15px;
+	h2 {
+		text-align: center;
+		margin: 10px;
+	}
+	> div {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px;
+	}
+	input {
+		background-color: #ebf4ee;
+		padding: 5px 10px;
+		border: none;
+		border-radius: 5px;
+	}
 }
