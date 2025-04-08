@@ -1,0 +1,74 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.2em;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	max-width: 1440px;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.content {
+	margin-top: 20px;
+	font-size: 24px;
+	display: grid;
+	justify-content: center;
+	gap: 10px;
+	> * {
+		text-align: center;
+	}
+	.roll {
+		font-size: 150px;
+	}
+}
+.diceEvent {
+	font-size: 40px;
+}
+
+button {
+	font-size: 1em;
+	max-width: 200px;
+	padding: 15px 30px;
+	margin: 20px auto;
+	background-color: #5ca3e6;
+	color: white;
+	border: none;
+	border-radius: 15px;
+	transition: background-color 0.3s ease;
+}
+
+button:hover {
+	background-color: #4c7dd8;
+	cursor: pointer;
+}
+
+.card {
+	display: flex;
+	font-size: 1.2em;
+	justify-content: space-between;
+	margin: 10px 0;
+	padding: 25px;
+	box-shadow: 2px 2px 2px lightgray;
+	background-color: #f1f1f1;
+	border-radius: 5px;
+}
+
+.wobble {
+	animation: anim 0.25s infinite linear;
+}
+
+@keyframes anim {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(180deg);
+	}
+}
