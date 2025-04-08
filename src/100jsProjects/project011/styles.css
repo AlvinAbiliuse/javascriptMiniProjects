@@ -1,0 +1,23 @@
+* {
+	padding: 0;
+	margin: 0;
+	line-height: 1.4em;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	max-width: 1440px;
+	padding: 10px;
+	margin: 0 auto;
+}
+
+#content {
+	max-width: 600px;
+	margin: 100px auto;
+	padding: 10px;
+}
