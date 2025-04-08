@@ -6,7 +6,7 @@
 }
 
 html {
-	display: relative;
+	position: relative;
 	height: 100%;
 	font-family: sans-serif;
 	background-color: #000000;
@@ -53,7 +53,7 @@ button:hover {
 dialog {
 	background-color: inherit;
 	max-width: 800px;
-	margin: 100px auto;
+	margin: 0 auto;
 }
 
 dialog::backdrop {
@@ -61,11 +61,14 @@ dialog::backdrop {
 }
 
 video {
+	margin-top: 100px;
 	width: 100%;
 }
 
 .closeBtn {
-	display: absolute;
+	position: absolute;
+	top: 0px;
+	right: 0px;
 	background-color: inherit;
 	color: white;
 	font-size: 50px;
