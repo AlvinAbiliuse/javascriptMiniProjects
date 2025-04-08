@@ -9,15 +9,21 @@ function updateDom(e) {
 	let list = ["celsius", "fahrenheit", "kelvin"];
 	list.splice(list.indexOf(e.id), 1);
 
-	if (current === "celsius") {
-		fahrenheit.value = (Number(e.value) * 9) / 5 + 32;
-		kelvin.value = Number(e.value) + 273.15;
-	} else if (current === "fahrenheit") {
-		celsius.value = ((Number(e.value) - 32) * 9) / 5;
-		kelvin.value = ((Number(e.value) - 32) * 9) / 5 + 273.15;
-	} else if ((current = "kelvin")) {
-		celsius.value = Number(e.value) - 273.15;
-		fahrenheit.value = ((Number(e.value) - 273.15) * 9) / 5 + 32;
+	if (current) {
+		if (e.id === "celsius") {
+			fahrenheit.value = (Number(e.value) * 9) / 5 + 32;
+			kelvin.value = Number(e.value) + 273.15;
+		} else if (e.id === "fahrenheit") {
+			celsius.value = ((Number(e.value) - 32) * 9) / 5;
+			kelvin.value = ((Number(e.value) - 32) * 9) / 5 + 273.15;
+		} else if ((e.id = "kelvin")) {
+			celsius.value = Number(e.value) - 273.15;
+			fahrenheit.value = ((Number(e.value) - 273.15) * 9) / 5 + 32;
+		}
+	} else {
+		celsius.value = "";
+		fahrenheit.value = "";
+		kelvin.value = "";
 	}
 	/*
 	for (let i = 0; i < list.length; i++) {
