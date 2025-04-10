@@ -21,6 +21,7 @@ function updateDom(e) {
 			fahrenheit.value = ((Number(e.value) - 273.15) * 9) / 5 + 32;
 		}
 	} else {
+		current = 0;
 		celsius.value = "";
 		fahrenheit.value = "";
 		kelvin.value = "";
@@ -44,14 +45,14 @@ function updateDom(e) {
 	*/
 }
 
-celsius.addEventListener("focus", (i) => {
-	setInterval(() => updateDom(i.target), 100);
+celsius.addEventListener("focus", (e) => {
+	setInterval(() => updateDom(e.target), 100);
 });
 
-fahrenheit.addEventListener("focus", (i) => {
-	setInterval(() => updateDom(i.target), 100);
+fahrenheit.addEventListener("focus", (e) => {
+	setInterval(() => updateDom(e.target), 100);
 });
 
-kelvin.addEventListener("focus", (i) => {
-	setInterval(() => updateDom(i.target), 100);
+kelvin.addEventListener("focus", (e) => {
+	setInterval(() => updateDom(e.target), 100);
 });
