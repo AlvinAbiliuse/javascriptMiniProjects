@@ -26,6 +26,11 @@ function updateDom(e) {
 		fahrenheit.value = "";
 		kelvin.value = "";
 	}
+
+	console.log(celsius.value);
+	console.log(fahrenheit.value);
+	console.log(kelvin.value);
+	console.log("\n\n");
 	/*
 	for (let i = 0; i < list.length; i++) {
 		if (current) {
@@ -45,14 +50,58 @@ function updateDom(e) {
 	*/
 }
 
-celsius.addEventListener("focus", (e) => {
+let interval;
+
+function start(e) {
 	setInterval(() => updateDom(e.target), 100);
+}
+
+function stop() {
+	clearInterval(interval);
+}
+
+let inputs = document.querySelectorAll("input");
+
+inputs.forEach((e) => {
+	e.addEventListener("change", (j) => {
+		updateDom(j.target);
+	});
+});
+/*
+
+inputs.forEach((e) => {
+	e.addEventListener("focusout", (j) => {
+		stop();
+	});
+});
+
+
+celsius.addEventListener("focus", (e) => {
+	start(e);
 });
 
 fahrenheit.addEventListener("focus", (e) => {
-	setInterval(() => updateDom(e.target), 100);
+	start(e);
 });
 
 kelvin.addEventListener("focus", (e) => {
-	setInterval(() => updateDom(e.target), 100);
+	start(e);
 });
+
+celsius.addEventListener("focusout", (e) => {
+	stop();
+});
+
+fahrenheit.addEventListener("focusout", (e) => {
+	stop();
+});
+
+kelvin.addEventListener("focusout", (e) => {
+	stop();
+});
+
+[celsius, fahrenheit, kelvin]j.forEach((e) => {
+	e.value = "hello";
+});
+
+*/
