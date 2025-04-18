@@ -17,7 +17,7 @@ let data = {
 		title: "Step 3",
 		description:
 			"Consectetur sed necessitatibus sit laudantium adipisci? Aut delectus rem Consectetur nulla fuga consequatur eos dignissimos? Enim itaque itaque veritatis",
-		img: "./images/two.jpg",
+		img: "./images/three.jpg",
 	},
 };
 
