@@ -2,10 +2,10 @@ import { data } from "./data.js";
 
 function updateDom(curr) {
 	document.querySelectorAll("button").forEach((e) => {
-		if (e.target.className) e.target.classList.remove("current");
+		if (e.className) e.classList.remove("current");
 	});
 	if (curr.className) curr.classList.add("current");
-	console.log(data[curr.className]);
+	console.log(data[curr.classList[0]]);
 }
 
 document.querySelectorAll("button").forEach((e) => {
