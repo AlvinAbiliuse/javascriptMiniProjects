@@ -1,3 +1,8 @@
+:root {
+	--peachy: #fff5f5;
+	--hotpink: #e55eac;
+	--bluegrey: #dee7e8;
+}
 * {
 	padding: 0;
 	margin: 0;
@@ -7,6 +12,7 @@
 
 html {
 	font-family: sans-serif;
+	background-color: #ffcae9;
 }
 
 body {
@@ -22,13 +28,15 @@ body {
 
 img {
 	max-width: 400px;
-	margin: 0 auto;
+	aspect-ratio: 1/1.2;
+	object-fit: contain;
+	margin: 50px auto;
 }
 
 .rightContainer {
 	max-width: 550px;
 	margin: 50px auto;
-	border: 1px solid black;
+	background-color: var(--peachy);
 }
 
 .btnContainer {
@@ -40,8 +48,32 @@ button {
 	flex: 1;
 	padding: 20px 30px;
 	border: none;
+	background-color: var(--bluegrey);
+	outline: none;
+	font-size: 1.1em;
+	letter-spacing: 0.13em;
+}
+
+button:hover {
+	background-color: var(--hotpink);
+	cursor: pointer;
+}
+
+.current {
+	background-color: var(--peachy);
+}
+
+.current:hover {
+	background-color: inherit;
 }
 
 .rightLower {
-	padding: 20px;
+	padding: 30px;
+	padding-top: 60px;
+	font-size: 0.9em;
+	color: #3e3e3e;
+}
+
+.description {
+	margin-top: 15px;
 }
