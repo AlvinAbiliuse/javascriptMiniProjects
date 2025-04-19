@@ -8,3 +8,40 @@
 html {
 	font-family: sans-serif;
 }
+
+body {
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#content {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+img {
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.rightContainer {
+	max-width: 550px;
+	margin: 50px auto;
+	border: 1px solid black;
+}
+
+.btnContainer {
+	width: 100%;
+	display: flex;
+}
+
+button {
+	flex: 1;
+	padding: 20px 30px;
+	border: none;
+}
+
+.rightLower {
+	padding: 20px;
+}
