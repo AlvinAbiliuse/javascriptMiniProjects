@@ -27,9 +27,9 @@ body {
 }
 
 img {
-	max-width: 400px;
-	aspect-ratio: 1/1.2;
-	object-fit: contain;
+	max-width: 500px;
+	aspect-ratio: 1/1;
+	object-fit: cover;
 	margin: 50px auto;
 }
 
@@ -37,6 +37,7 @@ img {
 	max-width: 550px;
 	margin: 50px auto;
 	background-color: var(--peachy);
+	border-radius: 20px;
 }
 
 .btnContainer {
@@ -52,6 +53,14 @@ button {
 	outline: none;
 	font-size: 1.1em;
 	letter-spacing: 0.13em;
+}
+
+button:nth-of-type(1) {
+	border-radius: 20px 0 0 0;
+}
+
+button:nth-of-type(3) {
+	border-radius: 0 20px 0 0;
 }
 
 button:hover {
