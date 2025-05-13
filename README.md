@@ -1,3 +1,3 @@
 # mini projects made using vanilla javascript
 
-[live version]()
+[live version](https://alvinabiliuse.github.io/javascriptMiniProjects/)
